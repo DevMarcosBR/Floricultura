@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato · Flores do Jardim</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:#2d2a26;line-height:1.6;background:#faf6f1}
+h1,h2,h3{font-family:'Playfair Display',serif;color:#2d2a26}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem}
+
+header{background:#fff;padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+header .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700}
+.logo span{color:#c2415c;font-style:italic}
+nav{display:flex;gap:1.5rem;align-items:center}
+nav a{font-size:.9rem;color:#6b6558;font-weight:500}
+nav a:hover{color:#c2415c}
+.btn{padding:.6rem 1.3rem;border-radius:999px;font-weight:600;font-size:.85rem;display:inline-block;transition:.2s;border:none;cursor:pointer}
+.btn-rosa{background:#c2415c;color:#fff}
+.btn-rosa:hover{background:#a83550}
+.btn-whats{background:#25d366;color:#fff}
+.btn-whats:hover{background:#128c7e}
+
+.page-title{padding:4rem 0 2rem;text-align:center}
+.page-title h1{font-size:clamp(2rem,4vw,3rem);margin-bottom:.5rem}
+.page-title h1 em{color:#c2415c;font-style:italic}
+.page-title p{color:#6b6558}
+
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding-bottom:4rem}
+.contato-info h2{font-size:1.8rem;margin-bottom:1rem}
+.contato-info > p{color:#6b6558;margin-bottom:2rem}
+.contato-item{display:flex;align-items:center;gap:1rem;padding:1rem;background:#fff;border-radius:12px;margin-bottom:.8rem;transition:.2s}
+.contato-item:hover{transform:translateX(4px);box-shadow:0 4px 15px rgba(0,0,0,.06)}
+.contato-item .ico{width:44px;height:44px;border-radius:10px;background:#fce7eb;color:#c2415c;display:grid;place-items:center;font-size:1.2rem;flex-shrink:0}
+.contato-item small{display:block;font-size:.7rem;color:#6b6558;text-transform:uppercase;letter-spacing:.1em}
+.contato-item strong{font-weight:600}
+
+.form{background:#fff;padding:2rem;border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.form h3{font-size:1.3rem;margin-bottom:1.2rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-field{display:flex;flex-direction:column;gap:.3rem}
+.form-field.full{grid-column:1/-1}
+.form-field label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#2d2a26}
+.form-field input,.form-field select,.form-field textarea{font-family:'Inter',sans-serif;font-size:.92rem;padding:.8rem;border:1.5px solid #e0d8cf;border-radius:10px;background:#faf6f1}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:none;border-color:#c2415c}
+.form-field textarea{resize:vertical;min-height:100px}
+.form .btn{width:100%;margin-top:.5rem;padding:.9rem}
+
+.mapa{background:#f3ebe2;padding:4rem 0}
+.mapa-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.mapa-grid h2{font-size:1.8rem;margin-bottom:1rem}
+.mapa-grid p{color:#6b6558;margin-bottom:1.5rem}
+.mapa-frame{border-radius:14px;overflow:hidden;height:380px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.mapa-frame iframe{width:100%;height:100%;border:0}
+
+footer{background:#2d2a26;color:rgba(255,255,255,.7);padding:2.5rem 0;text-align:center;font-size:.9rem}
+footer .social{display:flex;justify-content:center;gap:1.5rem;margin-bottom:1rem}
+footer .social a{color:#c9a96e}
+
+@media(max-width:768px){
+  .contato-grid,.mapa-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  nav{gap:1rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">Flores <span>do Jardim</span></a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="buques.html">Buquês</a>
+      <a href="contato.html">Contato</a>
+      <a href="contato.html" class="btn btn-rosa">Encomendar</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-title">
+  <div class="container">
+    <h1>Fale com a <em>gente</em></h1>
+    <p>Encomende pelo WhatsApp ou venha nos visitar no atelier.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contato-grid">
+    <div class="contato-info">
+      <h2>Como falar conosco</h2>
+      <p>Respondemos rapidinho pelo WhatsApp! Ou preencha o formulário ao lado.</p>
+      
+      <a href="https://wa.me/5514999999999" target="_blank" class="contato-item">
+        <span class="ico">💬</span>
+        <span><small>WhatsApp</small><strong>(14) 99999-9999</strong></span>
+      </a>
+      <a href="tel:+551434567890" class="contato-item">
+        <span class="ico">📞</span>
+        <span><small>Telefone</small><strong>(14) 3456-7890</strong></span>
+      </a>
+      <a href="mailto:contato@floresdojardim.com" class="contato-item">
+        <span class="ico">️</span>
+        <span><small>E-mail</small><strong>contato@floresdojardim.com</strong></span>
+      </a>
+      <div class="contato-item">
+        <span class="ico">🕐</span>
+        <span><small>Horário</small><strong>Seg a Sáb · 8h às 19h</strong></span>
+      </div>
+    </div>
+
+    <form class="form" onsubmit="enviarWhatsApp(event)">
+      <h3>📝 Encomenda rápida</h3>
+      <div class="form-row">
+        <div class="form-field">
+          <label>Seu nome</label>
+          <input type="text" id="nome" required placeholder="Como te chamar?">
+        </div>
+        <div class="form-field">
+          <label>Telefone</label>
+          <input type="tel" id="telefone" required placeholder="(14) 99999-9999">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full">
+          <label>Buquê</label>
+          <select id="buque">
+            <option>Rosas Vermelhas · R$ 189</option>
+            <option>Misto do Campo · R$ 149</option>
+            <option>Tulipas Rosé · R$ 219</option>
+            <option>Girassóis · R$ 129</option>
+            <option>Orquídea · R$ 249</option>
+            <option>Lavanda · R$ 139</option>
+            <option>Personalizado</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full">
+          <label>Observações</label>
+          <textarea id="msg" placeholder="Endereço de entrega, data, cartãozinho..."></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-whats">💬 Enviar pelo WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="mapa">
+  <div class="container mapa-grid">
+    <div>
+      <h2>Onde estamos</h2>
+      <p>Venha conhecer nosso atelier! Estacionamento gratuito na porta.</p>
+      <div class="contato-item">
+        <span class="ico">📍</span>
+        <span><small>Endereço</small><strong>Rua das Flores, 123 · Centro</strong></span>
+      </div>
+      <div class="contato-item">
+        <span class="ico">️</span>
+        <span><small>Estacionamento</small><strong>Gratuito na porta</strong></span>
+      </div>
+      <div class="contato-item">
+        <span class="ico">🚇</span>
+        <span><small>Metrô</small><strong>Estação Centro · 5 min a pé</strong></span>
+      </div>
+    </div>
+    <div class="mapa-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0!2d-46.65!3d-23.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAwLjAiUyA0NsKwMzknMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="social">
+      <a href="#">Instagram</a>
+      <a href="https://wa.me/5514999999999" target="_blank">WhatsApp</a>
+    </div>
+    <p>© 2026 Flores do Jardim · Rua das Flores, 123</p>
+  </div>
+</footer>
+
+<script>
+function enviarWhatsApp(e){
+  e.preventDefault();
+  const nome = document.getElementById('nome').value;
+  const tel = document.getElementById('telefone').value;
+  const buque = document.getElementById('buque').value;
+  const msg = document.getElementById('msg').value;
+  const texto = `Olá! Quero encomendar um buquê 🌸%0A%0A*Nome:* ${nome}%0A*Telefone:* ${tel}%0A*Buquê:* ${buque}%0A%0A*Observações:*%0A${msg}`;
+  window.open(`https://wa.me/5514999999999?text=${texto}`, '_blank');
+}
+</script>
+
+</body>
+</html>

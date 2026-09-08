@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buquês · Flores do Jardim</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:#2d2a26;line-height:1.6;background:#faf6f1}
+h1,h2,h3{font-family:'Playfair Display',serif;color:#2d2a26}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem}
+
+header{background:#fff;padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+header .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700}
+.logo span{color:#c2415c;font-style:italic}
+nav{display:flex;gap:1.5rem;align-items:center}
+nav a{font-size:.9rem;color:#6b6558;font-weight:500}
+nav a:hover{color:#c2415c}
+.btn{padding:.6rem 1.3rem;border-radius:999px;font-weight:600;font-size:.85rem;display:inline-block;transition:.2s}
+.btn-rosa{background:#c2415c;color:#fff}
+.btn-rosa:hover{background:#a83550}
+.btn-whats{background:#25d366;color:#fff}
+.btn-whats:hover{background:#128c7e}
+
+.page-title{padding:4rem 0 2rem;text-align:center}
+.page-title h1{font-size:clamp(2rem,4vw,3rem);margin-bottom:.5rem}
+.page-title h1 em{color:#c2415c;font-style:italic}
+.page-title p{color:#6b6558}
+
+.buques-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;padding-bottom:4rem}
+.buque-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:.3s}
+.buque-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.1)}
+.buque-card img{width:100%;height:280px;object-fit:cover}
+.buque-info{padding:1.2rem}
+.buque-info .cat{font-size:.7rem;color:#7a8b6f;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+.buque-info h3{font-size:1.2rem;margin:.3rem 0}
+.buque-info p{color:#6b6558;font-size:.88rem;margin-bottom:.8rem}
+.buque-foot{display:flex;justify-content:space-between;align-items:center}
+.buque-foot strong{font-family:'Playfair Display',serif;font-size:1.3rem;color:#c2415c}
+.buque-foot a{font-size:.85rem;color:#c2415c;font-weight:600}
+
+.cta{background:#c2415c;color:#fff;text-align:center;padding:3rem 2rem;border-radius:16px;margin:2rem auto;max-width:1100px}
+.cta h2{color:#fff;font-size:1.8rem;margin-bottom:.5rem}
+.cta p{opacity:.9;margin-bottom:1.5rem}
+.cta .btn{background:#fff;color:#c2415c}
+
+footer{background:#2d2a26;color:rgba(255,255,255,.7);padding:2.5rem 0;text-align:center;font-size:.9rem}
+footer .social{display:flex;justify-content:center;gap:1.5rem;margin-bottom:1rem}
+footer .social a{color:#c9a96e}
+
+@media(max-width:768px){nav{gap:1rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">Flores <span>do Jardim</span></a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="buques.html">Buquês</a>
+      <a href="contato.html">Contato</a>
+      <a href="contato.html" class="btn btn-rosa">Encomendar</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-title">
+  <div class="container">
+    <h1>Nossos <em>buquês</em></h1>
+    <p>Cada arranjo é montado no dia da entrega, com flores frescas.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="buques-grid">
+      <div class="buque-card">
+        <img src="https://picsum.photos/seed/rosas-vermelhas/400/400" alt="Rosas Vermelhas">
+        <div class="buque-info">
+          <span class="cat">Clássico</span>
+          <h3>Rosas Vermelhas</h3>
+          <p>12 rosas importadas com folhagem verde.</p>
+          <div class="buque-foot"><strong>R$ 189</strong><a href="contato.html">Encomendar →</a></div>
+        </div>
+      </div>
+      <div class="buque-card">
+        <img src="https://picsum.photos/seed/misto-campo/400/400" alt="Misto do Campo">
+        <div class="buque-info">
+          <span class="cat">Romântico</span>
+          <h3>Misto do Campo</h3>
+          <p>Girassol, margarida, lavanda e eucalipto.</p>
+          <div class="buque-foot"><strong>R$ 149</strong><a href="contato.html">Encomendar →</a></div>
+        </div>
+      </div>
+      <div class="buque-card">
+        <img src="https://picsum.photos/seed/tulipas-rosa/400/400" alt="Tulipas">
+        <div class="buque-info">
+          <span class="cat">Delicado</span>
+          <h3>Tulipas Rosé</h3>
+          <p>20 tulipas holandesas em tons de rosa.</p>
+          <div class="buque-foot"><strong>R$ 219</strong><a href="contato.html">Encomendar →</a></div>
+        </div>
+      </div>
+      <div class="buque-card">
+        <img src="https://picsum.photos/seed/girassois/400/400" alt="Girassóis">
+        <div class="buque-info">
+          <span class="cat">Alegre</span>
+          <h3>Girassóis do Sol</h3>
+          <p>7 girassóis com folhagem rústica.</p>
+          <div class="buque-foot"><strong>R$ 129</strong><a href="contato.html">Encomendar →</a></div>
+        </div>
+      </div>
+      <div class="buque-card">
+        <img src="https://picsum.photos/seed/orquidea/400/400" alt="Orquídea">
+        <div class="buque-info">
+          <span class="cat">Sofisticado</span>
+          <h3>Orquídea Branca</h3>
+          <p>Orquídea em vaso de cerâmica artesanal.</p>
+          <div class="buque-foot"><strong>R$ 249</strong><a href="contato.html">Encomendar →</a></div>
+        </div>
+      </div>
+      <div class="buque-card">
+        <img src="https://picsum.photos/seed/lavanda/400/400" alt="Lavanda">
+        <div class="buque-info">
+          <span class="cat">Aromático</span>
+          <h3>Lavanda Provence</h3>
+          <p>Buquê perfumado de lavanda seca.</p>
+          <div class="buque-foot"><strong>R$ 139</strong><a href="contato.html">Encomendar →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h2>Quer um buquê personalizado?</h2>
+      <p>Fazemos arranjos sob medida para casamentos, aniversários e eventos.</p>
+      <a href="https://wa.me/5514999999999?text=Olá!%20Quero%20um%20buquê%20personalizado." target="_blank" class="btn">💬 Pedir pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="social">
+      <a href="#">Instagram</a>
+      <a href="https://wa.me/5514999999999" target="_blank">WhatsApp</a>
+    </div>
+    <p>© 2026 Flores do Jardim · Rua das Flores, 123</p>
+  </div>
+</footer>
+
+</body>
+</html>
